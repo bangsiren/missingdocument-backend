@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const uri = process.env.MONGODB_URI ? process.env.MONGODB_URI : "mongodb://localhost:27017/UserDatabase";
+const uri = "mongodb+srv://bangsir:bangsiren1999@cluster0.x8pxu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(
   uri,
   {
