@@ -22,7 +22,7 @@ app.use(fileUpload());
 // app.use('/users', userRoutes)
 app.use(userRoutes)
 
-app.listen(3000, (er) => {
+app.listen(process.env.PORT ? process.env.PORT : 3000, (er) => {
   if (er) {
     console.log(er + "The server not running")
   } else {
