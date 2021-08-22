@@ -7,12 +7,12 @@ const mongoose = require('./db');
 const userRoutes = require('./routes/users_router');
 
 const app = express()
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb", parameterLimit: 50000 }));
 // app.use(bodyParser.urlencoded({ extended: true }));
 // // parse application/x-www-form-urlencoded
 
 // // parse application/json
-app.use(express.json());
+app.use(express.json({ limit: "50mb" }));
 // app.use(bodyParser.json());
 app.use(cors());
 
