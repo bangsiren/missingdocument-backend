@@ -6,6 +6,7 @@ const fileUpload = require('express-fileupload')
 const mongoose = require('./db');
 const userRoutes = require('./routes/users_router');
 
+
 const app = express()
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,7 +19,7 @@ app.use(cors());
 
 app.use('/uploads', express.static(__dirname + '/uploads'))
 app.use('/upload', express.static(path.join(__dirname, 'upload')))
-app.use(fileUpload());
+// app.use(fileUpload());
 // app.use('/users', userRoutes)
 app.use(userRoutes)
 

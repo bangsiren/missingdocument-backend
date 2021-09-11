@@ -10,7 +10,7 @@ router.post("/", userController.create);
 router.get("/:id", userController.findOne);
 router.patch("/:id", userController.updateUser);
 router.delete("/:id", userController.delete);
-router.post("/upload", fileUpload.index);
+router.post("/upload", fileUpload.uploadFile);
 
 router.put("/claim/:id", userController.claim)
 
