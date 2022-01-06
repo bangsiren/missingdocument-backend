@@ -7,6 +7,8 @@ const mongoose = require('./db');
 const userRoutes = require('./routes/users_router');
 
 
+
+
 const app = express()
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // // parse application/json
 app.use(express.json());
-// app.use(bodyParser.json());
+
+// app.use(bodyParser.json());const onerRoutes = require('./r')
 app.use(cors('*'));
 
 app.use('/uploads', express.static(__dirname + '/uploads'))

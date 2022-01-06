@@ -9,6 +9,9 @@ let cloudinaryv2 = cloudinary.v2
 let fileUploader = (filePath) => {
     return cloudinaryv2.uploader.upload(filePath, { folder: `files/images` });
 }
+// let deleteFile  = cloudinaryv2.uploader.destroy(filePath, function(result){
+//     console.log(result)
+// })
 // formidable
 exports.uploadFile = (req, res) => {
     // console.log('HYYEYUYEEYEYYEY');
@@ -29,6 +32,10 @@ exports.uploadFile = (req, res) => {
             res.json({ success: false })
         });
     });
+
+    // exports.deletingFile = (req, res) =>{
+    //  let detele  = 
+    // }
 
     form.on('end', () => {
         console.log("done")

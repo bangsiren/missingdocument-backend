@@ -1,6 +1,15 @@
 // ALl business logic goes here
 const Users = require('../model/users_model');
 
+var cloudinary = require('cloudinary');
+cloudinary.config({
+    cloud_name: 'b-tec',
+    api_key: '544984634748171',
+    api_secret: 'n0HBlW9nrGMqhIArZi9f6Q8qiIA'
+});
+let cloudinaryv2 = cloudinary.v2
+
+
 // this method is to create the User
 exports.create = (req, res) => {
 
