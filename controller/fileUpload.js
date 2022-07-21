@@ -1,6 +1,6 @@
 const { Buffer } = require('buffer');
 var cloudinary = require('cloudinary');
-const formidable = require('formidable')
+const formidable = require('formidable');
 const axios = require('axios');
 cloudinary.config({
     cloud_name: 'b-tec',
