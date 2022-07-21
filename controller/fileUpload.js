@@ -13,7 +13,7 @@ let fileUploader = (filePath) => {
 }
 // let deleteFile  = cloudinaryv2.uploader.destroy(filePath, function(result){
 //     console.log(result)
-// })
+// });
 // formidable
 exports.uploadFile = (req, res) => {
     // console.log('HYYEYUYEEYEYYEY');
